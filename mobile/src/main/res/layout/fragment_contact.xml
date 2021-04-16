@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/appintro_statusbar_height"
+    android:paddingBottom="@dimen/appintro2_bottombar_height"
+    android:background="@color/black_foreground_elements">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AppIntroDefaultHeading"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/introduction_emergency_contact"
+        app:layout_constraintVertical_weight="2"
+        app:layout_constraintBottom_toTopOf="@+id/content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:divider="@drawable/view_divider"
+        android:showDividers="middle"
+        app:layout_constraintVertical_weight="5"
+        android:contentDescription="@string/app_intro_image_content_description"
+        app:layout_constraintBottom_toTopOf="@+id/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/personalInfo_name" />
+
+        <EditText
+            android:id="@+id/introduction_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/example_name"
+            android:maxLength="10"
+            android:textCursorDrawable="@null"
+            android:drawableStart="@drawable/ic_person_outline"
+            android:drawablePadding="16dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            app:backgroundTint="@color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/personalInfo_mail"
+            />
+
+        <EditText
+            android:id="@+id/introduction_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawableStart="@drawable/ic_mail_outline"
+            android:drawablePadding="16dp"
+            android:textCursorDrawable="@null"
+            android:hint="@string/example_mail"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            app:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/personalInfo_phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/introduction_country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_contentColor="@color/white"
+                app:ccpDialog_textColor="@color/white"
+                app:ccpDialog_backgroundColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/introduction_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="9"
+                android:textCursorDrawable="@null"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="16dp"
+                android:hint="@string/example_number"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/white"
+                android:textColorHint="@color/grey" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/AppIntroDefaultText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoLink="web"
+        android:text="@string/introduction_contact_not_needed"
+        app:layout_constraintVertical_weight="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

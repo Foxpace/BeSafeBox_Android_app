@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="trans">#00000000 </color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#999999</color>
+    <color name="black_foreground_elements">#222222</color>
+
+    <color name="soft_red">#fb654e</color>
+
+    <color name="active_green">#05D613</color>
+    <color name="active_red">#EF476F</color>
+
+</resources>

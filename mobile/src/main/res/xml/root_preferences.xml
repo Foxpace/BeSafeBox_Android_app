@@ -1,0 +1,92 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.options.SettingsActivity">
+    <PreferenceCategory
+        android:title="@string/personalInfo_alarm"
+        android:icon="@drawable/ic_ringing">
+
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="alarm_alone"
+            app:singleLineTitle="false"
+            android:title="@string/settings_alarm_alone_title"
+            android:summary="@string/personalInfo_alarmToMe"
+            />
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            app:singleLineTitle="false"
+            android:key="alarm_assist"
+            android:title="@string/settings_alarm_to_contact_title"
+            android:summary="@string/personalInfo_wantAlarm"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:icon="@drawable/ic_person_outline"
+        android:title="@string/settings_contact"
+        >
+        <Preference
+            android:key="NAME"
+            android:title="@string/personalInfo_name" />
+        <Preference
+            android:key="MAIL"
+            android:title="@string/personalInfo_mail" />
+        <Preference
+            android:key="NUMBER"
+            android:title="@string/personalInfo_phone" />
+        <Preference
+            android:key="@string/settings_contact_warning"
+            android:title="@string/settings_warning"
+            android:summary="@string/settings_contact_warning_information"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Tests - fill the contact list to try"
+        android:icon="@drawable/ic_warning_white"
+        >
+        <Preference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:key="@string/settings_test_sms"
+            android:title="@string/settings_sms_send"
+            android:summary="@string/personalInfo_smsCost"
+            />
+        <Preference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:key="@string/settings_test_mail"
+            android:summary="@string/settings_need_internet"
+            android:title="@string/settings_mail_sent" />
+        <Preference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:key="@string/settings_test_alarm"
+            android:title="@string/settings_start_alarm" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:icon="@drawable/ic_battery_charging"
+        android:title="@string/personalInfo_save_battery">
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            android:defaultValue="true"
+            app:singleLineTitle="false"
+            android:key="battery_low"
+            android:title="@string/personalInfo_battery_low" />
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            android:defaultValue="true"
+            app:singleLineTitle="false"
+            android:key="Pocket_active"
+            android:title="@string/personalInfo_active_pocket" />
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            app:singleLineTitle="false"
+            android:key="Allow sleep"
+            android:title="@string/personalInfo_allow_sleep" />
+    </PreferenceCategory>
+</PreferenceScreen>

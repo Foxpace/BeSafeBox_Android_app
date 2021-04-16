@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="md_background_color">@color/black_foreground_elements</item>
+        <item name="md_color_title">@color/white</item>
+        <item name="md_color_content">@color/white</item>
+        <item name="md_color_button_text">@color/white</item>
+    </style>
+
+<!--    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >-->
+<!--        <item name="android:textColorPrimary">@android:color/white</item>-->
+<!--    </style>-->
+
+<!--    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">-->
+<!--        <item name="colorControlNormal">@color/white</item>-->
+<!--    </style>-->
+
+    <style name="custom_theme" parent="AlertDialog.AppCompat">
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">#333333</item>
+    </style>
+
+    <style name="SettingsTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="preferenceTheme">@style/CustomTheme.PreferenceThemeOverlay</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:colorControlHighlight">@color/white</item>
+        <item name="md_color_title">@color/white</item>
+        <item name="md_color_hint">@color/grey</item>
+        <item name="md_color_content">@color/white</item>
+        <item name="md_color_button_text">@color/white</item>
+        <item name="md_background_color">@color/black_foreground_elements</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/black_foreground_elements</item>
+    </style>
+
+    <style name="CustomTheme.PreferenceThemeOverlay" parent="@style/PreferenceThemeOverlay">
+        <item name="android:layout">@layout/pref_screen</item>
+        <item name="preferenceStyle">@style/custom_preference</item>
+    </style>
+
+    <style name="custom_preference">
+        <item name="android:layout">@layout/pref_preference</item>
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="singleLineTitle">false</item>
+        <item name="iconSpaceReserved">false</item>
+    </style>
+
+</resources>

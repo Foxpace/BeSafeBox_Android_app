@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<notices>
+    <notice>
+        <name>AppIntro</name>
+        <url>https://github.com/AppIntro/AppIntro</url>
+        <copyright>Copyright (C) 2015-2021 AppIntro Developers</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Country Code Picker Library</name>
+        <url>https://github.com/hbb20/CountryCodePickerProject</url>
+        <copyright>Copyright (C) 2016 Harsh Bhakta</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Licenses Dialog</name>
+        <url>https://github.com/PSDev/LicensesDialog</url>
+        <copyright>Copyright 2013 Philip Schiffer</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Android About Page</name>
+        <url>https://github.com/medyo/android-about-page</url>
+        <copyright>Copyright (c) 2016 Mehdi Sakout</copyright>
+        <license>MIT License</license>
+    </notice>
+
+    <notice>
+        <name>Maildroid</name>
+        <url>https://github.com/nedimf/maildroid</url>
+        <copyright>Copyright (c) 2021 Maildroid developers</copyright>
+        <license>MIT License</license>
+    </notice>
+
+    <notice>
+        <name>CircularProgressBar</name>
+        <url>https://github.com/lopspower/CircularProgressBar</url>
+        <copyright>Copyright 2018 Lopez Mikael</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>slidetoact</name>
+        <url>https://github.com/cortinico/slidetoact</url>
+        <copyright>Copyright (c) 2017 Nicola Corti</copyright>
+        <license>MIT License</license>
+    </notice>
+
+    <notice>
+        <name>android-ripple-pulse-animation</name>
+        <url>https://github.com/gaurav414u/android-ripple-pulse-animation</url>
+        <copyright>Copyright 2017 Gaurav Bhola</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>material-dialogs</name>
+        <url>https://github.com/afollestad/material-dialogs</url>
+        <copyright>Copyright 2021 Aidan Follestad</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Toasty</name>
+        <url>https://github.com/GrenderG/Toasty</url>
+        <copyright>Copyright 2021 GrenderG</copyright>
+        <license>GNU General Public License 3.0</license>
+    </notice>
+
+    <notice>
+        <name>Dexter</name>
+        <url>https://github.com/Karumi/Dexter</url>
+        <copyright>Copyright 2021 The Rock Solid Code Studio</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>ZapSplat</name>
+        <url>https://www.zapsplat.com/music/emergency-alarm-1/</url>
+        <copyright>Sound effect obtained from https://www.zapsplat.com</copyright>
+    </notice>
+
+</notices>
